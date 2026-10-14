@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+OWNER GUIDE — Haci Ismail Aslan academic website
+
+FREE HOSTING
+This is a complete, buildless website. No dependencies, tracking, paid APIs,
+external fonts, or database are required. Open this file in a browser to preview.
+For GitHub Pages, save it as index.html in a PUBLIC repository named
+aslantheaslan.github.io (if that name is available and belongs to your account).
+In repository Settings > Pages select Deploy from a branch, main, /(root).
+Use the exact published URL reported by GitHub Pages in your TU Berlin TYPO3
+profile. The expected address is https://aslantheaslan.github.io/ only after
+publication succeeds. This file does not itself create or publish a repository.
+Instructions verified 14 October 2026:
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
+EDITING
+1. Portrait: find the SVG inside .portrait-frame and replace it with:
+   <img src="assets/portrait.jpg" alt="Haci Ismail Aslan" width="436" height="506">
+   Add your photograph at assets/portrait.jpg in the repository.
+2. Theses: edit the advisedTheses array near the end of this file.
+   Record title, student, degree, year, role, and optional public URL.
+   No thesis records were supplied or independently verified; none are invented.
+3. Publications and biography: edit the ordinary HTML below.
+4. Update the footer date when you make substantive changes.
+5. If your public site address is different, keep all internal section links;
+   they are relative and do not depend on a domain.
+
+CONTENT SOURCES
+- CV_Ismail_Aslan.pdf and the owner's research descriptions in this conversation.
+- Institutional affiliation and academic email: https://www.tu.berlin/en/dos
+- QONNECT: https://arxiv.org/abs/2510.09851 and DOI 10.1007/978-981-95-5015-9_11
+- beta-GNN: https://arxiv.org/html/2503.20630v1 and DOI 10.1145/3721146.3721949
+- Workflow topology paper: https://arxiv.org/abs/2609.39481
+  Listed conservatively with its verified arXiv version, without inferring venue.
+- VisGIN: https://www.sciencedirect.com/science/article/abs/pii/S0957417423018250
+  Journal issue date: March 2024, volume 237 Part A (online DOI issued in 2023).
+- Vertices paper: https://doi.org/10.3934/mbe.2022565
+- Social profile URLs: embedded hyperlinks in the supplied CV.
+  GitHub profile independently confirmed as AslantheAslan.
+No citation counts, thesis supervision relationships, or research results are inferred.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Haci Ismail Aslan is a PhD candidate and Research Assistant at TU Berlin, researching robust graph learning, network intrusion detection, and machine learning for distributed systems.">
+  <meta name="theme-color" content="#f8f8f4">
+  <meta property="og:title" content="Haci Ismail Aslan — Researcher, TU Berlin">
+  <meta property="og:description" content="Robust graph learning, network security, and intelligent distributed systems. Research, publications, and thesis supervision.">
+  <meta property="og:type" content="website">
+  <title>Haci Ismail Aslan · TU Berlin</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e5556'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='29' fill='white'%3EIA%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--paper:#f8f8f4;--ink:#202d32;--muted:#58666a;--accent:#205b5c;--line:#dce2de;--wash:#edf1ec;--serif:Georgia,'Times New Roman',serif;--sans:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}a{color:var(--accent);text-underline-offset:4px;text-decoration-thickness:1px}a:hover{color:#103c3d;text-decoration:underline}button,a,summary{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #c28029;outline-offset:5px;border-radius:2px}button{font:inherit}::selection{background:#d4e8e1}h1,h2,h3,p{margin:0}h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.045em;line-height:1.12}h1{font-size:clamp(42px,5vw,62px)}h2{font-size:38px}h3{font-size:18px;line-height:1.45;letter-spacing:-.015em}p+p{margin-top:16px}.wrap{width:min(1100px,calc(100% - 80px));margin:auto}.skip{position:fixed;left:20px;top:-100px;z-index:5;padding:10px 18px;background:var(--ink);color:white}.skip:focus{top:10px}.site-header{background:rgba(248,248,244,.97);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:3}.header-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-size:14px;font-weight:600}.monogram{display:grid;place-items:center;width:35px;height:35px;border:1px solid #8ba6a0;border-radius:50%;color:var(--accent);font:16px var(--serif)}nav{display:flex;gap:27px}nav a{font-size:13px;text-decoration:none;color:var(--muted)}nav a:hover,nav a.active{color:var(--accent)}nav a.active{box-shadow:0 2px var(--accent);padding-bottom:4px}.hero{padding:83px 0 71px;display:grid;grid-template-columns:minmax(0,1fr) 218px;gap:70px;align-items:start}.eyebrow{font-size:11px;font-weight:650;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px;margin-bottom:22px}.eyebrow:before{content:'';width:23px;height:1px;background:var(--accent)}.hero .role{font-size:17px;color:var(--muted);margin-top:16px}.hero .intro{font-size:20px;line-height:1.6;max-width:650px;margin-top:27px;letter-spacing:-.015em}.hero .bio{color:var(--muted);max-width:645px;font-size:15px;margin-top:18px}.profile-links{display:flex;flex-wrap:wrap;gap:9px 23px;margin-top:28px;font-size:13px}.profile-links a{font-weight:550;text-decoration:none}.profile-links a span{font-size:13px;padding-left:4px}.portrait{margin:8px 0 0}.portrait-frame{aspect-ratio:1/1.16;background:#e8ede7;border-radius:3px;overflow:hidden;display:grid;place-items:center}.portrait svg{width:100%;height:100%;display:block}.portrait img{width:100%;height:100%;object-fit:cover}.portrait figcaption{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted);margin-top:11px}.portrait figcaption span:last-child{text-align:right}.section{display:grid;grid-template-columns:185px minmax(0,1fr);gap:45px;padding:58px 0;border-top:1px solid var(--line)}.section-label{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;display:flex;gap:13px;align-items:baseline;padding-top:10px}.section-label .number{color:#8a9994;font-variant-numeric:tabular-nums}.section-heading{margin-bottom:28px}.section-heading p{color:var(--muted);font-size:14px;margin-top:12px;max-width:620px}.research-list{display:grid;gap:26px}.research-item{display:grid;grid-template-columns:36px minmax(0,1fr);gap:16px}.research-icon{width:30px;height:30px;color:var(--accent);margin-top:2px}.research-item p{font-size:15px;color:var(--muted);margin-top:7px}.tags{display:flex;flex-wrap:wrap;gap:7px 15px;margin-top:10px;color:var(--accent);font-size:11px;letter-spacing:.02em}.direction{margin-top:33px;padding:23px 26px;background:var(--wash);border-left:2px solid #70938a}.direction .kicker{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:650;margin-bottom:8px}.direction p{font-size:14px;color:#435756;line-height:1.75}.publications-top{display:flex;gap:24px;justify-content:space-between;align-items:baseline}.text-link{font-size:12px;white-space:nowrap}.filters{display:flex;gap:7px;margin:0 0 12px;flex-wrap:wrap}.filters[hidden]{display:none}.filter{font-size:12px;background:transparent;border:1px solid var(--line);padding:6px 13px;color:var(--muted);border-radius:3px;cursor:pointer}.filter:hover{border-color:#8ba6a0}.filter[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent)}.publication-list{list-style:none;margin:0;padding:0}.publication{padding:23px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:47px minmax(0,1fr);gap:15px}.publication:last-child{border-bottom:0;padding-bottom:0}.publication[hidden]{display:none}.pub-year{font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted);padding-top:4px}.publication h3 a{color:var(--ink);text-decoration:none}.publication h3 a:hover{color:var(--accent);text-decoration:underline}.authors{font-size:12px;color:var(--muted);margin-top:7px;line-height:1.7}.authors strong{font-weight:600;color:var(--ink)}.venue{font-size:12px;color:var(--accent);margin-top:5px}.pub-links{display:flex;flex-wrap:wrap;gap:17px;margin-top:10px;font-size:12px}.pub-links a{text-decoration:none}.publication details{font-size:13px;margin-top:10px}.publication summary{cursor:pointer;color:var(--muted);width:fit-content;font-size:12px}.publication details p{color:var(--muted);margin-top:8px;line-height:1.7}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.timeline{display:grid;gap:27px}.timeline-item{display:grid;grid-template-columns:108px minmax(0,1fr);gap:24px}.period{font-size:11px;color:var(--muted);padding-top:3px;line-height:1.8}.timeline-item h3{font-size:16px}.timeline-item .place{font-size:13px;color:var(--accent);margin-top:3px}.timeline-item p{font-size:14px;color:var(--muted);margin-top:7px}.education{margin-top:36px;padding-top:27px;border-top:1px solid var(--line)}.small-heading{font-size:11px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}.degree{display:flex;justify-content:space-between;gap:20px;font-size:14px;padding:7px 0}.degree span{color:var(--muted);font-size:12px;white-space:nowrap}.degree small{font-size:12px;color:var(--muted);display:block;margin-top:2px}.thesis-empty{border-top:1px solid var(--line);padding:25px 0 5px}.thesis-empty p{font-size:14px;color:var(--muted)}.thesis-item{border-top:1px solid var(--line);padding:20px 0}.thesis-item p{font-size:13px;color:var(--muted);margin-top:6px}.thesis-item a{font-size:12px}.site-footer{border-top:1px solid var(--line);padding:27px 0 36px;margin-top:10px}.footer-inner{display:flex;justify-content:space-between;gap:24px;font-size:12px;color:var(--muted)}.footer-inner a{text-decoration:none}.footer-contact{display:flex;gap:20px;flex-wrap:wrap}.footer-note{font-size:11px;color:var(--muted);margin-top:14px}.site-footer .back-top{white-space:nowrap}
+    @media(min-width:1300px){.wrap{width:min(1120px,calc(100% - 100px))}.hero{padding-top:95px;padding-bottom:81px}.section{grid-template-columns:200px minmax(0,1fr);gap:55px}}
+    @media(max-width:850px){.wrap{width:calc(100% - 48px)}.brand .brand-name{display:none}nav{gap:20px}.hero{gap:32px;grid-template-columns:minmax(0,1fr) 170px;padding-top:57px}.hero .intro{font-size:18px}.section{grid-template-columns:1fr;gap:22px;padding:42px 0}.section-label{padding-top:0}.portrait figcaption{font-size:10px}.section-heading{margin-bottom:22px}}
+    @media(max-width:540px){html{scroll-padding-top:104px}.wrap{width:calc(100% - 36px)}.header-inner{height:70px;gap:13px}.monogram{width:30px;height:30px;font-size:14px}nav{gap:13px}nav a{font-size:11px}.hero{grid-template-columns:1fr;gap:27px;padding:38px 0 42px}.hero .eyebrow{font-size:10px;margin-bottom:17px}.hero .role{font-size:15px;margin-top:12px}.hero .intro{margin-top:22px;font-size:18px}.hero .bio{font-size:14px}.portrait{grid-row:1;display:flex;align-items:center;gap:17px;margin:0}.portrait-frame{width:81px;height:94px;flex-shrink:0}.portrait figcaption{display:block;font-size:11px;margin:0}.portrait figcaption span{display:block}.portrait figcaption span:last-child{text-align:left;margin-top:4px}.profile-links{gap:9px 18px;margin-top:21px}.section{padding:35px 0;gap:17px}h2{font-size:32px}.publications-top{display:block}.publications-top .text-link{display:inline-block;margin-top:13px}.publication{grid-template-columns:36px minmax(0,1fr);gap:9px}.publication h3{font-size:16px}.pub-year{font-size:11px}.timeline-item{grid-template-columns:1fr;gap:6px}.period br{display:none}.period br:after{content:' '}.degree{display:block;margin-bottom:7px}.degree span{display:block;margin-top:3px}.direction{padding:19px 20px}.footer-inner{display:block}.back-top{display:inline-block;margin-top:18px}.footer-contact{gap:8px 17px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{background:white;font-size:11pt}.site-header,.filters,.back-top,.skip{display:none}.wrap{width:100%}.hero{padding:0 0 25px;grid-template-columns:1fr 130px;gap:30px}h1{font-size:32pt}h2{font-size:24pt}.section{padding:23px 0;grid-template-columns:120px 1fr;gap:20px}.publication,.timeline-item,.research-item{break-inside:avoid}.publication[hidden]{display:grid}.direction{background:transparent}.site-footer{padding:16px 0}.portrait-frame{max-height:160px}.hero .intro{font-size:14pt}a{color:inherit;text-decoration:none}}
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Haci Ismail Aslan, back to top"><span class="monogram" aria-hidden="true">IA</span><span class="brand-name">Haci Ismail Aslan</span></a>
+      <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#background">Background</a><a href="#theses">Theses</a></nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="name">
+      <div>
+        <p class="eyebrow">Technische Universität Berlin</p>
+        <h1 id="name">Haci Ismail Aslan</h1>
+        <p class="role">PhD Candidate &amp; Research Assistant</p>
+        <p class="intro">I study how machine learning can make networked systems more reliable, secure, and efficient.</p>
+        <p class="bio">I am part of the <a href="https://www.tu.berlin/en/dos">Distributed and Operating Systems (DOS)</a> group at TU Berlin, supervised by Prof. Odej Kao. My research connects robust graph learning and network intrusion detection with forecasting and resource management in the cloud-edge continuum.</p>
+        <div class="profile-links" aria-label="Contact and academic profiles">
+          <a href="mailto:aslan@tu-berlin.de">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=yicvfQwAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/AslantheAslan">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/hismailaslan/">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <!-- Replace this SVG with <img src="assets/portrait.jpg" alt="Haci Ismail Aslan" width="436" height="506"> when your photograph is ready. -->
+          <svg viewBox="0 0 218 253" role="img" aria-labelledby="portrait-title"><title id="portrait-title">Portrait placeholder for Haci Ismail Aslan</title><rect width="218" height="253" fill="#e8ede7"/><path d="M27 0v253M191 0v253M0 31h218M0 222h218" stroke="#d9e1d8" stroke-width="1"/><circle cx="109" cy="92" r="34" fill="#c3d0c4"/><path d="M43 216v-29c0-37 26-59 66-59s66 22 66 59v29" fill="#c3d0c4"/><text x="109" y="239" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" letter-spacing="2" fill="#526b5d">PORTRAIT PLACEHOLDER</text></svg>
+        </div>
+        <figcaption><span>Distributed systems &amp; ML</span><span>Berlin, Germany</span></figcaption>
+      </figure>
+    </section>
+
+    <section id="research" class="section" aria-labelledby="research-title">
+      <div class="section-label"><span class="number">01</span> Research</div>
+      <div>
+        <div class="section-heading"><h2 id="research-title">Learning for reliable systems.</h2><p>Three connected areas shape my current work.</p></div>
+        <div class="research-list">
+          <article class="research-item">
+            <svg class="research-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M16 3 27 8v8c0 7-11 13-11 13S5 23 5 16V8Z"/><path d="m10 16 4 4 8-9"/></svg>
+            <div><h3>Network intrusion detection</h3><p>I investigate graph neural networks for robust network intrusion detection, connecting learned representations with the security of networked systems.</p><div class="tags"><span>Network security</span><span>Graph-based detection</span></div></div>
+          </article>
+          <article class="research-item">
+            <svg class="research-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="m7 7 18 3-9 15L7 7l-3 14 12 4"/><circle cx="7" cy="7" r="3" fill="var(--paper)"/><circle cx="25" cy="10" r="3" fill="var(--paper)"/><circle cx="16" cy="25" r="3" fill="var(--paper)"/><circle cx="4" cy="21" r="3" fill="var(--paper)"/></svg>
+            <div><h3>Robust graph learning</h3><p>I study how graph neural networks respond to changes in graph structure. In β-GNN, I proposed an ensemble approach to improve robustness and assess the severity of structural perturbations.</p><div class="tags"><span>Graph neural networks</span><span>Robustness</span><span>Representation learning</span></div></div>
+          </article>
+          <article class="research-item">
+            <svg class="research-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3" y="3" width="10" height="8" rx="1"/><rect x="19" y="3" width="10" height="8" rx="1"/><rect x="11" y="22" width="10" height="8" rx="1"/><path d="M8 11v5h16v-5m-8 5v6"/></svg>
+            <div><h3>Intelligent cloud-edge orchestration</h3><p>Within <a href="https://www.swarmchestrate.eu/">Swarmchestrate</a>, I use gMLP, XGBoost, and iTransformer to forecast monitoring metrics for proactive runtime management. We have tested CPU utilization, disk I/O, memory consumption, and CPU temperature. I also co-developed QONNECT for QoS-aware orchestration across Kubernetes clusters.</p><div class="tags"><span>Time-series forecasting</span><span>Kubernetes</span><span>QoS-aware scheduling</span></div></div>
+          </article>
+        </div>
+        <aside class="direction"><p class="kicker">Research direction</p><p>I would like to bring these areas together through robust graph-based intrusion detection across Kubernetes clusters: local models learning from pod and node interactions, and sharing detection patterns to support coordinated defense.</p></aside>
+      </div>
+    </section>
+
+    <section id="publications" class="section" aria-labelledby="publications-title">
+      <div class="section-label"><span class="number">02</span> Publications</div>
+      <div>
+        <div class="section-heading publications-top"><h2 id="publications-title">Selected work.</h2><a class="text-link" href="https://scholar.google.com/citations?user=yicvfQwAAAAJ&amp;hl=en">All publications on Scholar ↗</a></div>
+        <div class="filters" aria-label="Filter publications" hidden><button class="filter" type="button" data-filter="all" aria-pressed="true">All research</button><button class="filter" type="button" data-filter="graphs" aria-pressed="false">Graph learning</button><button class="filter" type="button" data-filter="systems" aria-pressed="false">Distributed systems</button></div>
+        <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+        <ol class="publication-list">
+          <li class="publication" data-topics="graphs systems"><span class="pub-year">2026</span><article><h3><a href="https://arxiv.org/abs/2609.39481">About the Influence of Workflow Topology on Task Intensity Prediction through Graph Learning</a></h3><p class="authors">Max Otto, <strong>Haci Ismail Aslan</strong>, Joel Witzke, Jonathan Bader, Odej Kao</p><p class="venue">Preprint available on arXiv · 2026</p><div class="pub-links"><a href="https://arxiv.org/abs/2609.39481">arXiv ↗</a><a href="https://arxiv.org/pdf/2609.39481">PDF ↗</a></div><details><summary>Research summary</summary><p>A study of how workflow graph structure contributes to predicting task-level CPU and memory intensity, comparing graph learning with models using handcrafted topological features.</p></details></article></li>
+          <li class="publication" data-topics="systems"><span class="pub-year">2025</span><article><h3><a href="https://doi.org/10.1007/978-981-95-5015-9_11">QONNECT: A QoS-Aware Orchestration System for Distributed Kubernetes Clusters</a></h3><p class="authors"><strong>Haci Ismail Aslan</strong>, Syed Muhammad Mahmudul Haque, Joel Witzke, Odej Kao</p><p class="venue">International Conference on Service-Oriented Computing · ICSOC 2025</p><div class="pub-links"><a href="https://doi.org/10.1007/978-981-95-5015-9_11">Publication ↗</a><a href="https://arxiv.org/abs/2510.09851">arXiv ↗</a></div><details><summary>Research summary</summary><p>A framework for expressing QoS objectives and coordinating application placement across heterogeneous Kubernetes clusters, with fault tolerance and rescheduling.</p></details></article></li>
+          <li class="publication" data-topics="graphs"><span class="pub-year">2025</span><article><h3><a href="https://doi.org/10.1145/3721146.3721949">β-GNN: A Robust Ensemble Approach Against Graph Structure Perturbation</a></h3><p class="authors"><strong>Haci Ismail Aslan</strong>, Philipp Wiesner, Ping Xiong, Odej Kao</p><p class="venue">5th Workshop on Machine Learning and Systems · EuroMLSys 2025</p><div class="pub-links"><a href="https://doi.org/10.1145/3721146.3721949">Publication ↗</a><a href="https://arxiv.org/abs/2503.20630">arXiv ↗</a></div><details><summary>Research summary</summary><p>An ensemble approach combining graph neural networks with a multilayer perceptron to address sensitivity to graph-structure perturbations.</p></details></article></li>
+          <li class="publication" data-topics="graphs"><span class="pub-year">2024</span><article><h3><a href="https://doi.org/10.1016/j.eswa.2023.121323">VisGIN: Visibility Graph Neural Network on One-dimensional Data for Biometric Authentication</a></h3><p class="authors"><strong>Haci Ismail Aslan</strong>, Chang Choi</p><p class="venue">Expert Systems with Applications · Volume 237, Part A</p><div class="pub-links"><a href="https://doi.org/10.1016/j.eswa.2023.121323">Publication ↗</a><a href="https://github.com/AslantheAslan/visibility-gin">Code ↗</a></div><details><summary>Research summary</summary><p>Graph-based biometric authentication using cardiac signals, connecting one-dimensional time-series data with visibility graphs and graph isomorphism networks.</p></details></article></li>
+          <li class="publication" data-topics="graphs"><span class="pub-year">2022</span><article><h3><a href="https://doi.org/10.3934/mbe.2022565">Classification of Vertices on Social Networks by Multiple Approaches</a></h3><p class="authors"><strong>Haci Ismail Aslan</strong>, Hoon Ko, Chang Choi</p><p class="venue">Mathematical Biosciences and Engineering · 2022</p><div class="pub-links"><a href="https://doi.org/10.3934/mbe.2022565">Publication ↗</a></div><details><summary>Research summary</summary><p>A comparison of node classification using graph convolutional networks, graph attention networks, and harmonic functions.</p></details></article></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="background" class="section" aria-labelledby="background-title">
+      <div class="section-label"><span class="number">03</span> Background</div>
+      <div>
+        <div class="section-heading"><h2 id="background-title">Research &amp; experience.</h2></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="period">Mar 2024 – present</div><div><h3>Research Assistant</h3><div class="place">TU Berlin · Distributed and Operating Systems</div><p>Graph-based network intrusion detection, GNN robustness, and forecasting for cloud-edge runtime management within Swarmchestrate.</p></div></article>
+          <article class="timeline-item"><div class="period">Sep 2023 –<br> Feb 2024</div><div><h3>AI Research Intern</h3><div class="place">LG AI Research · Materials Intelligence Lab</div><p>Deployed a reaction-prediction model on EXAONE Discovery and contributed to the team's collaboration with Elsevier on reaction prediction, retrosynthesis, and impurity identification.</p></div></article>
+          <article class="timeline-item"><div class="period">Sep 2021 –<br> Aug 2023</div><div><h3>Research Assistant</h3><div class="place">Gachon University · Intelligent Information Processing Lab</div><p>Graph machine learning and ECG-based biometric authentication under the supervision of Prof. Chang Choi.</p></div></article>
+          <article class="timeline-item"><div class="period">Jul – Aug 2019</div><div><h3>Research Intern</h3><div class="place">Chosun University · 3D Lab</div><p>Medical-image segmentation for 3D printing and development of medical VR simulation content.</p></div></article>
+        </div>
+        <div class="education"><h3 class="small-heading">Education</h3><div class="degree"><div>PhD in Computer Science <small>Technische Universität Berlin · ongoing</small></div><span>2024 – present</span></div><div class="degree"><div>Master of Computer Engineering <small>Gachon University · Brain Korea Scholar</small></div><span>2021 – 2023</span></div><div class="degree"><div>BSc in Electrical and Electronics Engineering <small>Hacettepe University</small></div><span>2016 – 2021</span></div></div>
+      </div>
+    </section>
+
+    <section id="theses" class="section" aria-labelledby="theses-title">
+      <div class="section-label"><span class="number">04</span> Supervision</div>
+      <div>
+        <div class="section-heading"><h2 id="theses-title">Advised theses.</h2></div>
+        <!-- Add confirmed thesis records to the advisedTheses array at the end of this file. Do not infer supervision from paper co-authorship. -->
+        <div id="thesis-list"><div class="thesis-empty"><p>Details of advised theses will be added here.</p></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><div class="footer-inner"><div class="footer-contact"><span>Haci Ismail Aslan</span><a href="mailto:aslan@tu-berlin.de">aslan@tu-berlin.de</a><a href="https://www.tu.berlin/en/dos">DOS · TU Berlin ↗</a></div><a class="back-top" href="#top">Back to top ↑</a></div><p class="footer-note">Personal academic website · Updated October 2026</p></div></footer>
+  <script>
+    /* EDIT THESIS RECORDS HERE. Only add confirmed, approved-to-publish details.
+       Each record: {title: "...", student: "...", degree: "Master's thesis", year: "2026", role: "Co-advisor", url: "https://..."}
+       Leave url empty if there is no public thesis link. Records display in the order entered. */
+    const advisedTheses = [];
+    const thesisList = document.getElementById('thesis-list');
+    if (advisedTheses.length) {
+      thesisList.replaceChildren();
+      for (const thesis of advisedTheses) {
+        const article = document.createElement('article'); article.className = 'thesis-item';
+        const title = document.createElement('h3'); title.textContent = thesis.title; article.append(title);
+        const meta = document.createElement('p'); meta.textContent = [thesis.student, thesis.degree, thesis.year, thesis.role].filter(Boolean).join(' · '); article.append(meta);
+        if (thesis.url && /^https?:\/\//i.test(thesis.url)) { const link = document.createElement('a'); link.href = thesis.url; link.textContent = 'Read thesis ↗'; article.append(link); }
+        thesisList.append(article);
+      }
+    }
+    const filterGroup = document.querySelector('.filters');
+    const publications = [...document.querySelectorAll('.publication')];
+    filterGroup.hidden = false;
+    filterGroup.addEventListener('click', event => {
+      const button = event.target.closest('[data-filter]'); if (!button) return;
+      for (const filter of filterGroup.querySelectorAll('button')) filter.setAttribute('aria-pressed', String(filter === button));
+      let count = 0;
+      for (const publication of publications) { const match = button.dataset.filter === 'all' || publication.dataset.topics.split(' ').includes(button.dataset.filter); publication.hidden = !match; if (match) count++; }
+      document.getElementById('filter-status').textContent = `${count} publications shown.`;
+    });
+    if ('IntersectionObserver' in window) {
+      const links = [...document.querySelectorAll('nav a')];
+      const observer = new IntersectionObserver(entries => { for (const entry of entries) { if (entry.isIntersecting) { for (const link of links) { const active = link.hash === '#' + entry.target.id; link.classList.toggle('active', active); if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current'); } } } }, {rootMargin: '-15% 0px -65% 0px', threshold: 0});
+      document.querySelectorAll('main > section[id]').forEach(section => observer.observe(section));
+    }
+  </script>
+</body>
+</html>
